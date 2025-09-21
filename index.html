@@ -17,8 +17,10 @@
             min-height: 100vh;
             margin: 0;
             text-align: center;
-            overflow: hidden;
             position: relative;
+            /* Bu satır telefonda aşağı kaydırmayı sağlar. */
+            overflow-y: auto;
+            overflow-x: hidden;
         }
 
         /* Kalp Animasyonları için Arka Plan */
@@ -70,9 +72,10 @@
             max-width: 600px;
             z-index: 10; /* İçeriğin kalplerin önünde kalması için */
             position: relative;
+            margin-top: 50px;
+            margin-bottom: 50px;
         }
         
-        /* Geri kalan stiller ve JavaScript öncekiyle aynı kalacak */
         h1 {
             font-size: 2.5em;
             color: #d147a3;
